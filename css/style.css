@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* TYPO */
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
 main{
     display: flex;
