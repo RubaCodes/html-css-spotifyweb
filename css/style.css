@@ -4,3 +4,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+main{
+    display: flex;
+}
+aside{
+    flex-shrink: 0;
+    height: calc(100vh - 100px);
+    width: 250px;
+    background-color: lightcoral;
+}
+.main-app{
+    width: calc(100% - 200px);
+}
+.main-app header{
+    height: 100px;
+    background-color: lightgreen;
+}
+footer{
+    height: 100px;
+    background-color: lightblue;
+}
