@@ -211,6 +211,81 @@ aside #logo-small{
         width: calc(100% / 6);
     } 
  }
+/* for you playlist */
+ .suggested-playlist .row{
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 10px; */
+}
+.suggested-playlist .col{
+    width: calc(100% / 2);
+    text-align: center;
+} 
+.suggested-playlist .card{
+    margin: 10px;
+}
+.suggested-playlist img{
+    width:100%;
+} 
+.suggested-playlist .song-info{
+    
+    padding: 5px 0;
+} 
+.suggested-playlist .song-title{
+    font-weight: bold;
+}
+.suggested-playlist .subtitle{
+    color: #7c7e83;
+}  
+
+@media screen and (min-width:700px){
+    .suggested-playlist .col{
+        width: calc(100% / 4);
+    } 
+}
+@media screen and (min-width:1100px){
+    .suggested-playlist .col{
+        width: calc(100% / 6);
+    } 
+ }
+
+ /* piu popolari */
+.popular-artists .row{
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 10px; */
+}
+.popular-artists .col{
+    width: calc(100% / 2);
+    text-align: center;
+} 
+.popular-artists .card{
+    margin: 10px;
+}
+.popular-artists img{
+    width:100%;
+} 
+.popular-artists .song-info{
+    
+    padding: 5px 0;
+} 
+.popular-artists .song-title{
+    font-weight: bold;
+}
+.popular-artists .subtitle{
+    color: #7c7e83;
+}  
+
+@media screen and (min-width:700px){
+    .popular-artists .col{
+        width: calc(100% / 4);
+    } 
+}
+@media screen and (min-width:1100px){
+    .popular-artists .col{
+        width: calc(100% / 6);
+    } 
+ }
 
 
 /* FOOTER */
