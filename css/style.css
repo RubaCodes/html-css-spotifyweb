@@ -44,6 +44,9 @@ aside ul li a {
 }
 
 /* logo */
+aside .logo{
+    padding: 10px;
+}
 aside #logo-big {
     height: 80px;
     flex-shrink: 0;
