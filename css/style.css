@@ -32,9 +32,13 @@ aside ul li a{
     text-decoration: none;
     color: inherit;  
 }
-aside .logo{
-    height: 100px;
+aside #logo-big{
+    height: 80px;
     flex-shrink: 0;
+    width: 100%;
+}
+aside #logo-small{
+    display: none;
 }
 .aside-nav img ,.playlist i{
     width: 30px;
@@ -76,6 +80,22 @@ aside .logo{
 }
 
 @media screen and (max-width:600px){
+    aside{
+        padding: 10px;
+        flex-shrink: 0;
+        height: calc(100vh - 100px);
+        width: 50px;
+        background-color: #000000;
+        color: #c0c0c0;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    aside #logo-big{
+        display: none;
+    }
+    aside #logo-small{
+        display: block;
+    }
     .aside-nav span{
         display: none;
     }
