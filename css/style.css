@@ -22,6 +22,8 @@ aside{
     width: 250px;
     background-color: #000000;
     color: #c0c0c0;
+    display: flex;
+    flex-flow: column nowrap;
 }
 aside ul{
     list-style: none;
@@ -32,22 +34,30 @@ aside ul li a{
 }
 aside .logo{
     height: 100px;
+    flex-shrink: 0;
 }
 .aside-nav img ,.playlist i{
     width: 30px;
     vertical-align: middle;
     margin-right: 10px;
 }
-.aside-nav li{
+.aside-nav li,.playlist li{
     padding: 5px 0;
 }
 .aside-nav i{
     font-size: 40px;   
 }
-.playlist li{
-    padding: 5px 0;
+.playlist{
+    flex-grow: 1;
+    overflow-y: auto;
+}
+.playlist i{
+    font-size: 40px;
 }
 
+.profile, .aside-nav{
+    overflow: hidden;
+}
 .profile img,.profile i{
     vertical-align: middle;
 }
