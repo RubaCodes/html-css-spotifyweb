@@ -88,7 +88,7 @@ aside #logo-small{
         background-color: #000000;
         color: #c0c0c0;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column nowrap;        
     }
     aside #logo-big{
         display: none;
@@ -108,6 +108,10 @@ aside #logo-small{
     .profile hr{
         opacity: 0;
     }
+    /* per centrare il downlaod */
+    .install-app{
+        margin-left: 2.5px;
+    }
 }
 
 /* MAIN */
@@ -116,8 +120,26 @@ aside #logo-small{
 }
 .main-app header{
     height: 100px;
-    background-color: lightgreen;
+    width: calc(100% - 200px);
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+.main-app header a{
+   background-color: inherit;
+   color: white;
+   border: 1px solid white;
+   padding: 10px 30px;
+   border-radius: 20px;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+
 /* FOOTER */
 footer{
     padding: 0 20px;
