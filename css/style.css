@@ -121,6 +121,7 @@ aside #logo-small{
 .main-app{
     width: calc(100% - 200px);
     background-color: #1b1f27;
+    color: white;
 }
 /* mian header */
 .main-app header{
@@ -165,6 +166,42 @@ aside #logo-small{
     color: #66696d;
     font-weight: bold;
 }
+/* main app recently played */
+
+.recently-played .row{
+    display: flex;
+    flex-flow: row wrap;
+    /* gap: 10px; */
+}
+.recently-played .col{
+    width: calc(100% / 2);
+    text-align: center;
+} 
+.recently-played img{
+    width:100%;
+} 
+.recently-played .song-info{
+    
+    padding: 5px 0;
+} 
+.recently-played .song-title{
+    font-weight: bold;
+}
+.recently-played .subtitle{
+    color: #7c7e83;
+}  
+
+@media screen and (min-width:700){
+    .recently-played .col{
+        width: calc(100% / 4);
+    } 
+}
+@media screen and (min-width:1100px){
+    .recently-played .col{
+        width: calc(100% / 6);
+    } 
+ }
+
 
 /* FOOTER */
 footer{
