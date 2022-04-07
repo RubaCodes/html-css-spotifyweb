@@ -20,31 +20,27 @@ aside{
     flex-shrink: 0;
     height: calc(100vh - 100px);
     width: 250px;
-    background-color: lightcoral;
+    background-color: #000000;
+    color: #c0c0c0;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li a{
+    text-decoration: none;
+    color: inherit;  
+}
+aside .logo{
+    height: 100px;
+}
+.aside-nav img{
+    width: 40px;
+    vertical-align: middle;
 }
 
 
 
-@media screen and (max-width:600px){
-    aside{
-        padding: 10px;
-        flex-shrink: 0;
-        height: calc(100vh - 100px);
-        width: 50px;
-        background-color: lightpink;
-    }
-    #logo-big{
-        display: none;
-    }
-    
-    .aside-container{
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-    }
-    
-}
+/* MAIN */
 .main-app{
     width: calc(100% - 200px);
 }
@@ -102,9 +98,7 @@ footer .artist{
     padding: 0 20px;
 }
 /* footer right */
-.footer-right{
-    /* flex-shrink: 0; */
-}
+
 .footer-right .media-bar{
     width: 100px;
 }
