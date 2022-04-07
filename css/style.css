@@ -33,12 +33,21 @@ aside ul li a{
 aside .logo{
     height: 100px;
 }
-.aside-nav img{
-    width: 40px;
+.aside-nav img ,.playlist i{
+    width: 30px;
     vertical-align: middle;
+    margin-right: 10px;
 }
-
-
+aside i{
+    font-size: 40px;
+    
+}
+.playlist li{
+    padding: 5px 0;
+}
+.aside-nav li{
+    padding: 5px 0;
+}
 
 /* MAIN */
 .main-app{
