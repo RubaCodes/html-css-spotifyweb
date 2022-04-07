@@ -12,11 +12,26 @@ body{
 main{
     display: flex;
 }
+
+
+/* ASIDE */
 aside{
     flex-shrink: 0;
     height: calc(100vh - 100px);
     width: 250px;
     background-color: lightcoral;
+}
+
+
+
+@media screen and (max-width:600px){
+    aside{
+        flex-shrink: 0;
+        height: calc(100vh - 100px);
+        width: 50px;
+        background-color: lightpink;
+    }
+    
 }
 .main-app{
     width: calc(100% - 200px);
