@@ -38,15 +38,30 @@ aside .logo{
     vertical-align: middle;
     margin-right: 10px;
 }
-aside i{
-    font-size: 40px;
-    
+.aside-nav li{
+    padding: 5px 0;
+}
+.aside-nav i{
+    font-size: 40px;   
 }
 .playlist li{
     padding: 5px 0;
 }
-.aside-nav li{
-    padding: 5px 0;
+
+.profile img,.profile i{
+    vertical-align: middle;
+}
+.profile img {
+    width: 20px;
+}
+.profile div, .user div{
+    display: inline-block;
+}
+.user, .install-app{
+    padding: 10px 0;
+}
+.user i{
+    font-size: 30px;   
 }
 
 /* MAIN */
