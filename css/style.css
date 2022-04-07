@@ -120,14 +120,17 @@ aside #logo-small{
 /* MAIN */
 .main-app{
     width: calc(100% - 200px);
+    background-color: #1b1f27;
 }
+/* mian header */
 .main-app header{
+    padding-right: 80px;
     height: 100px;
     width: calc(100% - 200px);
     position: fixed;
     z-index: 10;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.3;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -141,7 +144,27 @@ aside #logo-small{
    text-transform: uppercase;
    text-decoration: none;
 }
-
+/* main nav */
+.main-app nav{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-app ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.main-app ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #66696d;
+    font-weight: bold;
+}
 
 /* FOOTER */
 footer{
