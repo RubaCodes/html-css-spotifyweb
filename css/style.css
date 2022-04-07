@@ -16,6 +16,7 @@ main{
 
 /* ASIDE */
 aside{
+    padding: 10px;
     flex-shrink: 0;
     height: calc(100vh - 100px);
     width: 250px;
@@ -26,10 +27,21 @@ aside{
 
 @media screen and (max-width:600px){
     aside{
+        padding: 10px;
         flex-shrink: 0;
         height: calc(100vh - 100px);
         width: 50px;
         background-color: lightpink;
+    }
+    #logo-big{
+        display: none;
+    }
+    
+    .aside-container{
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
     }
     
 }
