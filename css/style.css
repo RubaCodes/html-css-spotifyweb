@@ -14,7 +14,6 @@ main {
     display: flex;
 }
 
-
 /* ASIDE */
 aside {
     padding: 10px;
@@ -170,7 +169,7 @@ aside #logo-small {
 .main-app header {
     padding-right: 80px;
     height: 100px;
-    width: calc(100% - 200px);
+    width: calc(100% );
     position: fixed;
     z-index: 10;
     background-color: black;
@@ -178,6 +177,11 @@ aside #logo-small {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+@media screen  and (min-width:600px) {
+    .main-app header{
+    width: calc(100% - 200px);
+    }
 }
 
 .main-app header a {
@@ -216,49 +220,74 @@ aside #logo-small {
 
 /* main app recently played */
 
-.recently-played .row,.suggested-playlist .row,.popular-artists .row{
+.recently-played .row,
+.suggested-playlist .row,
+.popular-artists .row {
     display: flex;
     flex-flow: row wrap;
 }
-.recently-played .col,.suggested-playlist .col,.popular-artists .col{
+
+.recently-played .col,
+.suggested-playlist .col,
+.popular-artists .col {
     width: calc(100% / 2);
     text-align: center;
 }
-.recently-played .card,.suggested-playlist .card,.popular-artists .card{
+
+.recently-played .card,
+.suggested-playlist .card,
+.popular-artists .card {
     margin: 10px;
 }
-.recently-played img,.suggested-playlist img{
+
+.recently-played img,
+.suggested-playlist img {
     width: 100%;
 }
-.recently-played .song-info,.suggested-playlist .song-info,.popular-artists .song-info{
+
+.recently-played .song-info,
+.suggested-playlist .song-info,
+.popular-artists .song-info {
     padding: 5px 0;
 }
 
-.recently-played .song-title,.suggested-playlist .song-info,.popular-artists .song-title{
+.recently-played .song-title,
+.suggested-playlist .song-info,
+.popular-artists .song-title {
     font-weight: bold;
 }
 
-.recently-played .subtitle,.suggested-playlist .subtitle,.popular-artists .subtitle{
+.recently-played .subtitle,
+.suggested-playlist .subtitle,
+.popular-artists .subtitle {
     color: #7c7e83;
 }
 
 @media screen and (min-width:700px) {
-    .recently-played .col,.suggested-playlist .col,.popular-artists .col{
+
+    .recently-played .col,
+    .suggested-playlist .col,
+    .popular-artists .col {
         width: calc(100% / 4);
     }
 }
 
 @media screen and (min-width:1100px) {
-    .recently-played .col,.suggested-playlist .col,.popular-artists .col{
+
+    .recently-played .col,
+    .suggested-playlist .col,
+    .popular-artists .col {
         width: calc(100% / 6);
     }
 }
+
 /* piu popolari */
 
 .popular-artists img {
     width: 100%;
     border-radius: 50%;
 }
+
 /* FOOTER */
 footer {
     padding: 0 20px;
