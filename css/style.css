@@ -17,8 +17,15 @@ main {
 /* sezione per l'hover */
 aside ul li a:hover,
 .main-app ul li a:hover,
-.install-app:hover {
+.install-app:hover,
+.footer-left .artist:hover ,
+.footer-left i:hover{
     color: white;
+    font-weight: bold;
+}
+
+.footer-left .song-name:hover {
+    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -44,9 +51,10 @@ aside ul li a {
 }
 
 /* logo */
-aside .logo{
+aside .logo {
     padding: 10px;
 }
+
 aside #logo-big {
     height: 80px;
     flex-shrink: 0;
@@ -157,6 +165,7 @@ aside #logo-small {
         display: flex;
         flex-flow: column nowrap;
     }
+
     /* gestione barre verdi active */
     .aside-nav ul li a::before {
         display: none;
@@ -436,7 +445,8 @@ footer {
 
 /* footer left */
 .footer-left {
-    flex-grow: 0;
+    flex-wrap: wrap-reverse;
+    flex-shrink: 0;
 }
 
 footer .artist {
