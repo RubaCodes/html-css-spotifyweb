@@ -13,8 +13,11 @@ body {
 main {
     display: flex;
 }
+
 /* sezione per l'hover */
-aside ul li a:hover,.main-app ul li a:hover, .install-app:hover  {
+aside ul li a:hover,
+.main-app ul li a:hover,
+.install-app:hover {
     color: white;
     font-weight: bold;
 }
@@ -174,7 +177,7 @@ aside #logo-small {
 .main-app header {
     padding-right: 80px;
     height: 100px;
-    width: calc(100% );
+    width: calc(100%);
     position: fixed;
     z-index: 10;
     background-color: black;
@@ -183,9 +186,10 @@ aside #logo-small {
     justify-content: flex-end;
     align-items: center;
 }
-@media screen  and (min-width:600px) {
-    .main-app header{
-    width: calc(100% - 200px);
+
+@media screen and (min-width:600px) {
+    .main-app header {
+        width: calc(100% - 200px);
     }
 }
 
@@ -200,8 +204,9 @@ aside #logo-small {
     scale: 1.0;
     transition: scale 0.2s ease-in-out;
 }
+
 .main-app header a:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 /* main nav */
@@ -236,6 +241,11 @@ aside #logo-small {
     display: flex;
     flex-flow: row wrap;
 }
+.recently-played h2,
+.suggested-playlist h2,
+.popular-artists h2 {
+   padding: 10px;
+}
 
 .recently-played .col,
 .suggested-playlist .col,
@@ -253,6 +263,7 @@ aside #logo-small {
 .recently-played img,
 .suggested-playlist img {
     width: 100%;
+    display: block;
 }
 
 .recently-played .song-info,
@@ -265,6 +276,7 @@ aside #logo-small {
 .suggested-playlist .song-info,
 .popular-artists .song-title {
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .recently-played .subtitle,
@@ -272,6 +284,14 @@ aside #logo-small {
 .popular-artists .subtitle {
     color: #7c7e83;
 }
+.recently-played .subtitle-big,
+.suggested-playlist .subtitle-big,
+.popular-artists .subtitle-big {
+    padding:  5px 10px;
+    color: #7c7e83;
+}
+
+
 
 @media screen and (min-width:700px) {
 
@@ -296,7 +316,28 @@ aside #logo-small {
 .popular-artists img {
     width: 100%;
     border-radius: 50%;
+    display: block;
 }
+
+.cover {
+    position: relative;
+    overflow: hidden;
+}
+.cover:hover img {
+    background-color: black;
+    opacity: 0.5;
+}
+.cover:hover::after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: "\f144";
+    font-family: "Font Awesome 6 Free";
+    font-size: 70px; 
+    transform: translate(-50%,-50%);
+}
+
+
 
 /* FOOTER */
 footer {
@@ -319,6 +360,8 @@ footer {
     align-items: center;
     gap: 15px;
 }
+
+
 
 /* footer left */
 .footer-left {
