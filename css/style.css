@@ -231,6 +231,18 @@ aside #logo-small {
     text-decoration: none;
     color: #66696d;
     font-weight: bold;
+    /* border-bottom: 2px solid #90ee90; */
+}
+.main-app .active-bar {
+    margin-left: 25%;
+    width: 50%;
+    height: 2px;
+    background-color: #90ee90;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+.main-app ul li a:focus .active-bar {
+    opacity: 1;
 }
 
 /* main app recently played */
