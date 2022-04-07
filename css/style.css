@@ -119,9 +119,16 @@ aside #logo-small{
 
 /* MAIN */
 .main-app{
-    width: calc(100% - 200px);
+    width: calc(100% - 50px);
     background-color: #1b1f27;
     color: white;
+}
+@media  screen and (min-width:600px){
+    .main-app{
+        width: calc(100% - 200px);
+        background-color: #1b1f27;
+        color: white;
+    }
 }
 /* mian header */
 .main-app header{
@@ -177,6 +184,9 @@ aside #logo-small{
     width: calc(100% / 2);
     text-align: center;
 } 
+.recently-played .card{
+    margin: 10px;
+}
 .recently-played img{
     width:100%;
 } 
@@ -191,7 +201,7 @@ aside #logo-small{
     color: #7c7e83;
 }  
 
-@media screen and (min-width:700){
+@media screen and (min-width:700px){
     .recently-played .col{
         width: calc(100% / 4);
     } 
