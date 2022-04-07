@@ -48,13 +48,14 @@ aside .logo{
     font-size: 40px;   
 }
 .playlist{
-    flex-grow: 1;
     overflow-y: auto;
 }
 .playlist i{
     font-size: 40px;
 }
-
+.profile{
+    margin-top: auto;
+}
 .profile, .aside-nav{
     overflow: hidden;
 }
@@ -72,6 +73,21 @@ aside .logo{
 }
 .user i{
     font-size: 30px;   
+}
+
+@media screen and (max-width:600px){
+    .aside-nav span{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .profile .hide{
+        display: none;
+    }
+    .profile hr{
+        opacity: 0;
+    }
 }
 
 /* MAIN */
