@@ -167,7 +167,7 @@ aside #logo-small {
 @media screen and (min-width:600px) {
     .main-app {
         height: calc(100vh - 100px);
-        width: calc(100% - 100px);
+        width: calc(100% - 50px);
         background-color: #1b1f27;
         color: white;
     }
@@ -177,7 +177,7 @@ aside #logo-small {
 .main-app header {
     padding-right: 80px;
     height: 100px;
-    width: calc(100%);
+    width: 100%;
     position: fixed;
     z-index: 10;
     background-color: black;
@@ -189,9 +189,9 @@ aside #logo-small {
 
 @media screen and (min-width:600px) {
     .main-app header {
-        width: calc(100% - 200px);
+        width: calc(100% - 250px);
     }
-}
+} 
 
 .main-app header a {
     background-color: inherit;
@@ -241,10 +241,11 @@ aside #logo-small {
     display: flex;
     flex-flow: row wrap;
 }
+
 .recently-played h2,
 .suggested-playlist h2,
 .popular-artists h2 {
-   padding: 10px;
+    padding: 10px;
 }
 
 .recently-played .col,
@@ -284,10 +285,11 @@ aside #logo-small {
 .popular-artists .subtitle {
     color: #7c7e83;
 }
+
 .recently-played .subtitle-big,
 .suggested-playlist .subtitle-big,
 .popular-artists .subtitle-big {
-    padding:  5px 10px;
+    padding: 5px 10px;
     color: #7c7e83;
 }
 
@@ -323,19 +325,21 @@ aside #logo-small {
     position: relative;
     overflow: hidden;
 }
+
 .cover:hover img {
     background-color: black;
     opacity: 0.5;
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.1s linear;
 }
-.cover:hover::after{
+
+.cover:hover::after {
     position: absolute;
     top: 50%;
     left: 50%;
     content: "\f144";
     font-family: "Font Awesome 6 Free";
-    font-size: 70px; 
-    transform: translate(-50%,-50%);
+    font-size: 70px;
+    transform: translate(-50%, -50%);
 }
 
 
@@ -344,7 +348,7 @@ aside #logo-small {
 footer {
     padding: 0 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     width: 100%;
@@ -356,25 +360,20 @@ footer {
 
 .footer-left,
 .footer-right {
-    max-width: 25%;
+    width: 25%;
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
-
 
 /* footer left */
 .footer-left {
     flex-grow: 0;
 }
 
-.footer-left .song-info {
-    padding-right: 25px;
-}
-
 footer .artist {
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 .footer-left img {
@@ -384,8 +383,7 @@ footer .artist {
 /* footer mid */
 
 .footer-mid {
-    flex-shrink: 0;
-    width: 50%;
+    flex-grow: 1;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -404,6 +402,10 @@ footer .artist {
 }
 
 /* footer right */
+.footer-right {
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
 
 .footer-right .media-bar {
     width: 100px;
@@ -412,7 +414,7 @@ footer .artist {
 /* MEDIA BAR */
 .media-bar {
     height: 5px;
-    width: 100%;
+    width: 70%;
     background-color: #5a5a5a;
     border-radius: 5px;
     position: relative;
