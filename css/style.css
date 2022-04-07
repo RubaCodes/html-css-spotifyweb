@@ -174,7 +174,7 @@ aside #logo-small {
     position: fixed;
     z-index: 10;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.6;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -216,141 +216,49 @@ aside #logo-small {
 
 /* main app recently played */
 
-.recently-played .row {
+.recently-played .row,.suggested-playlist .row,.popular-artists .row{
     display: flex;
     flex-flow: row wrap;
-    /* gap: 10px; */
 }
-
-.recently-played .col {
+.recently-played .col,.suggested-playlist .col,.popular-artists .col{
     width: calc(100% / 2);
     text-align: center;
 }
-
-.recently-played .card {
+.recently-played .card,.suggested-playlist .card,.popular-artists .card{
     margin: 10px;
 }
-
-.recently-played img {
+.recently-played img,.suggested-playlist img{
     width: 100%;
 }
-
-.recently-played .song-info {
-
+.recently-played .song-info,.suggested-playlist .song-info,.popular-artists .song-info{
     padding: 5px 0;
 }
 
-.recently-played .song-title {
+.recently-played .song-title,.suggested-playlist .song-info,.popular-artists .song-title{
     font-weight: bold;
 }
 
-.recently-played .subtitle {
+.recently-played .subtitle,.suggested-playlist .subtitle,.popular-artists .subtitle{
     color: #7c7e83;
 }
 
 @media screen and (min-width:700px) {
-    .recently-played .col {
+    .recently-played .col,.suggested-playlist .col,.popular-artists .col{
         width: calc(100% / 4);
     }
 }
 
 @media screen and (min-width:1100px) {
-    .recently-played .col {
+    .recently-played .col,.suggested-playlist .col,.popular-artists .col{
         width: calc(100% / 6);
     }
 }
-
-/* for you playlist */
-.suggested-playlist .row {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.suggested-playlist .col {
-    width: calc(100% / 2);
-    text-align: center;
-}
-
-.suggested-playlist .card {
-    margin: 10px;
-}
-
-.suggested-playlist img {
-    width: 100%;
-}
-
-.suggested-playlist .song-info {
-
-    padding: 5px 0;
-}
-
-.suggested-playlist .song-title {
-    font-weight: bold;
-}
-
-.suggested-playlist .subtitle {
-    color: #7c7e83;
-}
-
-@media screen and (min-width:700px) {
-    .suggested-playlist .col {
-        width: calc(100% / 4);
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .suggested-playlist .col {
-        width: calc(100% / 6);
-    }
-}
-
 /* piu popolari */
-.popular-artists .row {
-    display: flex;
-    flex-flow: row wrap;
-    /* gap: 10px; */
-}
-
-.popular-artists .col {
-    width: calc(100% / 2);
-    text-align: center;
-}
-
-.popular-artists .card {
-    margin: 10px;
-}
 
 .popular-artists img {
     width: 100%;
     border-radius: 50%;
 }
-
-.popular-artists .song-info {
-
-    padding: 5px 0;
-}
-
-.popular-artists .song-title {
-    font-weight: bold;
-}
-
-.popular-artists .subtitle {
-    color: #7c7e83;
-}
-
-@media screen and (min-width:700px) {
-    .popular-artists .col {
-        width: calc(100% / 4);
-    }
-}
-
-@media screen and (min-width:1100px) {
-    .popular-artists .col {
-        width: calc(100% / 6);
-    }
-}
-
-
 /* FOOTER */
 footer {
     padding: 0 20px;
