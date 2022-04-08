@@ -15,8 +15,8 @@ main {
 }
 
 /* sezione per l'hover */
-aside ul li a:hover,
-.main-app ul li a:hover,
+aside  a:hover,
+.main-app a:hover,
 .install-app:hover,
 .footer-left .artist:hover ,
 .footer-left i:hover{
