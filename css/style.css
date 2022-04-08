@@ -447,7 +447,7 @@ footer {
     width: 25%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 /* footer left */
@@ -487,7 +487,7 @@ footer .artist {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    width: 100%;
+    width: 80%;
 }
 
 .footer-mid i {
@@ -505,13 +505,20 @@ footer .artist {
 }
 
 /* footer right */
+
+/* wrap della media bar al rimpiccolimento dello schermo */
 .footer-right {
     justify-content: flex-end;
-    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+@media screen and (min-width:700px) {
+    .footer-right {
+        flex-wrap: nowrap;
+    }
 }
 
 .footer-right .media-bar {
-    width: 100px;
+    width:100px;
 }
 
 /* MEDIA BAR */
