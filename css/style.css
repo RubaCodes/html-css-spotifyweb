@@ -451,20 +451,18 @@ footer {
 }
 
 /* footer left */
-.footer-left {
-    flex-wrap: wrap-reverse;
-    flex-shrink: 0;
-}
 
 footer .artist {
     font-weight: 500;
     text-transform: capitalize;
-}
+} 
 
 .footer-left img {
     height: 50px;
 }
-
+.footer-left .library-actions i{
+    padding: 5px;
+}
 /* footer mid */
 
 .footer-mid {
@@ -480,6 +478,7 @@ footer .artist {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 40%;
 }
 
 .footer-mid .media-control {
@@ -492,7 +491,7 @@ footer .artist {
 
 .footer-mid i {
     font-size: 25px;
-    padding: 0 20px;
+    padding: 0 10%;
 }
 
 .fa-regular.fa-circle-play.big {
