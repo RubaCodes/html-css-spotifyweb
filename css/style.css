@@ -451,7 +451,10 @@ footer {
 }
 
 /* footer left */
-
+.footer-left{
+    justify-content: flex-start;
+    gap: 15px;
+}
 footer .artist {
     font-weight: 500;
     text-transform: capitalize;
